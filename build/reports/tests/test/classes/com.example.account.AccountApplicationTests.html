@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AccountApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AccountApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.account.html">com.example.account</a> &gt; AccountApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.005s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-09-22T21:40:57.108+09:00  INFO 18612 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.account.AccountApplicationTests]: AccountApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22T21:40:57.145+09:00  INFO 18612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.account.AccountApplication for test class com.example.account.AccountApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-09-22T21:40:57.231+09:00  INFO 18612 --- [    Test worker] c.e.account.AccountApplicationTests      : Starting AccountApplicationTests using Java 17.0.12 with PID 18612 (started by DESKTOP in C:\Java_project\Account)
+2024-09-22T21:40:57.231+09:00  INFO 18612 --- [    Test worker] c.e.account.AccountApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-09-22T21:40:58.222+09:00  INFO 18612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-22T21:40:58.612+09:00  INFO 18612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 340 ms. Found 3 JPA repository interfaces.
+2024-09-22T21:41:00.811+09:00  INFO 18612 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-22T21:41:01.082+09:00  INFO 18612 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-22T21:41:01.157+09:00  INFO 18612 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-22T21:41:01.476+09:00  INFO 18612 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-22T21:41:01.570+09:00  INFO 18612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-22T21:41:01.967+09:00  INFO 18612 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2024-09-22T21:41:01.973+09:00  INFO 18612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-22T21:41:02.028+09:00  WARN 18612 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-22T21:41:04.261+09:00  INFO 18612 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists account cascade 
+Hibernate: 
+    drop table if exists account_user cascade 
+Hibernate: 
+    drop table if exists transaction cascade 
+Hibernate: 
+    drop sequence if exists account_seq
+Hibernate: 
+    drop sequence if exists account_user_seq
+Hibernate: 
+    drop sequence if exists transaction_seq
+Hibernate: 
+    create sequence account_seq start with 1 increment by 50
+Hibernate: 
+    create sequence account_user_seq start with 1 increment by 50
+Hibernate: 
+    create sequence transaction_seq start with 1 increment by 50
+Hibernate: 
+    create table account (
+        account_user_id bigint,
+        balance bigint,
+        created_at timestamp(6),
+        id bigint not null,
+        registered_at timestamp(6),
+        un_registered_at timestamp(6),
+        updated_at timestamp(6),
+        account_number varchar(255),
+        account_status enum ('IN_USE','UNREGISTERED'),
+        primary key (id)
+    )
+Hibernate: 
+    create table account_user (
+        created_at timestamp(6),
+        id bigint not null,
+        updated_at timestamp(6),
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table transaction (
+        account_id bigint,
+        amount bigint,
+        balance_snapshot bigint,
+        created_at timestamp(6),
+        id bigint not null,
+        transacted_at timestamp(6),
+        updated_at timestamp(6),
+        transaction_id varchar(255),
+        transaction_result_type enum ('F','S'),
+        transaction_type enum ('CANCEL','USE'),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists account 
+       add constraint FKgao17rutsgwjob4c0a0ry5ron 
+       foreign key (account_user_id) 
+       references account_user
+Hibernate: 
+    alter table if exists transaction 
+       add constraint FK6g20fcr3bhr6bihgy24rq1r1b 
+       foreign key (account_id) 
+       references account
+2024-09-22T21:41:04.386+09:00  INFO 18612 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22T21:41:06.401+09:00  INFO 18612 --- [    Test worker] org.redisson.Version                     : Redisson 3.17.1
+2024-09-22T21:41:07.160+09:00  INFO 18612 --- [sson-netty-2-13] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-09-22T21:41:07.208+09:00  INFO 18612 --- [sson-netty-2-32] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-09-22T21:41:08.384+09:00  INFO 18612 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2024-09-22T21:41:08.608+09:00  INFO 18612 --- [    Test worker] c.e.account.AccountApplicationTests      : Started AccountApplicationTests in 11.453 seconds (process running for 23.898)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.1</a> at 2024. 9. 22. 오후 9:41:14</p>
+</div>
+</div>
+</body>
+</html>

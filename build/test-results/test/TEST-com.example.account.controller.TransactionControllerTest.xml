@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.account.controller.TransactionControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-09-22T13:01:27" hostname="DESKTOP-U2GMPJI" time="3.088">
+  <properties/>
+  <testcase name="successGetQueryTransaction()" classname="com.example.account.controller.TransactionControllerTest" time="0.035"/>
+  <testcase name="successUseBalance()" classname="com.example.account.controller.TransactionControllerTest" time="0.018"/>
+  <testcase name="successCancelBalance()" classname="com.example.account.controller.TransactionControllerTest" time="3.032"/>
+  <system-out><![CDATA[2024-09-22T22:01:27.191+09:00  INFO 14136 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.account.controller.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22T22:01:27.209+09:00  INFO 14136 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.account.AccountApplication for test class com.example.account.controller.TransactionControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-09-22T22:01:27.310+09:00  INFO 14136 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Starting TransactionControllerTest using Java 17.0.12 with PID 14136 (started by DESKTOP in C:\Java_project\Account)
+2024-09-22T22:01:27.311+09:00  INFO 14136 --- [    Test worker] c.e.a.c.TransactionControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2024-09-22T22:01:27.931+09:00  INFO 14136 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-22T22:01:27.931+09:00  INFO 14136 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-22T22:01:27.932+09:00  INFO 14136 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-22T22:01:27.937+09:00  INFO 14136 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Started TransactionControllerTest in 0.724 seconds (process running for 15.64)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /transaction/12345
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.account.controller.TransactionController
+           Method = com.example.account.controller.TransactionController#queryTransaction(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"accountNumber":"1000000000","transactionType":"USE","transactionResult":"S","transactionId":"transactionIdForCancel","amount":54321,"transactedAt":"2024-09-22T22:01:27.9433904"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /transaction/use
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"55"]
+             Body = {"userId":1,"accountNumber":"2000000000","amount":3000}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.account.controller.TransactionController
+           Method = com.example.account.controller.TransactionController#useBalance(Request)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"accountNumber":"1000000000","transactionResult":"S","transactionId":"transactionId","amount":12345,"transactedAt":"2024-09-22T22:01:27.9782966"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /transaction/cancel
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"76"]
+             Body = {"transactionId":"transactionId","accountNumber":"2000000000","amount":3000}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.account.controller.TransactionController
+           Method = com.example.account.controller.TransactionController#cancelBalance(Request)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"accountNumber":"1000000000","transactionResult":"S","transactionId":"transactionId","amount":54321,"transactedAt":"2024-09-22T22:01:27.9982441"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
